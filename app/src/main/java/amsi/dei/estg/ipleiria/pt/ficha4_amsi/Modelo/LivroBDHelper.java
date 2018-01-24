@@ -64,7 +64,7 @@ public class LivroBDHelper extends SQLiteOpenHelper {
         value.put(ANO_LIVRO, livro.getAno());
         value.put(CAPA_LIVRO, livro.getCapa());
 
-        long id = this.database.insert(TABLE_NAME, null, value);
+        long id = this.database.insert(TABLE_NAME,null, value);
         if (id > -1){
             System.out.println("--> INSERIU BD ID: " + id);
             livro.setIdLivro(id);
